@@ -1,13 +1,5 @@
 <?php
- $con = mysqli_connect("localhost", "root", "", "social");
-
- // Check for errors connecting to DB
- if (mysqli_connect_errno()) {
-     echo "Failed to connect: " . mysqli_connect_errno();
- }
-
- // Insert an entry into the table
- $query = mysqli_query($con, "INSERT INTO test VALUES ('1', 'Curtis')")
+require 'config/config.php';
 ?>
 
 <!DOCTYPE html>
